@@ -1,0 +1,852 @@
+html {
+  height: -webkit-fill-avaliable;
+}
+body {
+  max-width: auto;
+  margin: 0 auto;
+  padding: 0;
+  height: 100vh;
+}
+
+body {
+  overflow-x: hidden;
+  background-image: url("/public/img/homepage-background-pattern.avif");
+  background-repeat: repeat;
+  z-index: -1;
+}
+
+/* Navbar + form settings */
+
+nav a {
+  letter-spacing: 3px;
+  margin: 0 0.6rem;
+  margin-top: 2rem;
+}
+
+/* Horizontal black linear gradient */
+
+.HorizontalLinearG-top {
+  position: relative;
+  margin-top: -10rem;
+  width: 100%;
+  height: 10rem;
+  background-image: linear-gradient(to bottom, transparent 2%, black 150%);
+}
+
+.HorizontalLinearG-bottom {
+  position: relative;
+  margin-bottom: -5rem;
+  width: 100%;
+  height: 20rem;
+  background-image: linear-gradient(to top, transparent 2%, black 150%);
+}
+
+.HorizontalLinearGtop {
+  position: relative;
+  margin-top: -10rem;
+  width: 100%;
+  height: 10rem;
+  background-image: linear-gradient(to bottom, transparent 2%, black 150%);
+}
+
+.HorizontalLinearGbottom {
+  position: relative;
+  margin-bottom: -5rem;
+  width: 100%;
+  height: 20rem;
+  background-image: linear-gradient(to top, transparent 2%, black 150%);
+}
+
+/* Navbar settings */
+
+span.navbar-brand {
+  padding-left: 2rem;
+}
+
+.navbar-brand {
+  display: flex;
+  font-family: "Roboto Slab", serif, Arial, sans-serif;
+  color: white !important;
+  font-size: 2rem !important;
+}
+
+.nav-container {
+  display: flex;
+  letter-spacing: 2.5px;
+  padding-bottom: 30px;
+}
+
+#NavbarLinks {
+  margin-right: 30%;
+}
+
+.nav-link {
+  color: white !important;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.nav-link#instagram:hover {
+  color: #cf11c9 !important;
+}
+
+.nav-link#facebook:hover {
+  color: #3b5998 !important;
+}
+
+.nav-link#whatsup:hover {
+  color: #25d365c5 !important;
+}
+
+/* Hovering effect */
+.nav-link:hover {
+  color: #fa6e07 !important;
+}
+
+/* Homepage settings */
+
+/* This div makes the hamburger icon dissapear, z-index fixes it. */
+div.homepagePattern#homepagePattern {
+  background-image: url("/public/img/homepage-background-pattern.avif");
+  background-repeat: repeat;
+  z-index: -1;
+}
+/* fontFamily: "Rubik Dirt" */
+h1.h1Homepage {
+  font-family: "Rubik Dirt", cursive, Arial, sans-serif;
+  text-align: right;
+  font-size: 6rem;
+}
+
+h3.h3Homepage {
+  padding-top: 1rem;
+  font-family: "Rubik Dirt", cursive, Arial, sans-serif;
+  text-align: right;
+  font-size: 2rem;
+}
+
+
+
+
+.HomepageDiv {
+  padding-bottom: 20rem;
+}
+
+#homepageDownArrow {
+  margin: 23rem auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#homepageDownArrow span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 5px solid rgb(149, 149, 149);
+  border-right: 5px solid rgb(149, 149, 149);
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: scroll 2s infinite;
+}
+
+#homepageDownArrow span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+#homepageDownArrow span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+
+#whatsupIconFixed {
+  position: fixed;
+  transition: transform 0.3s ease; 
+  height: 40px;
+  width: 40px;
+  left: 3rem;
+  bottom: 10rem; 
+  transform: translateX(-50%) translateY(50%); 
+}
+
+
+#whatsupIconFixed:hover {
+  transform: translateX(-50%) translateY(50%) scale(1.3);
+  cursor: pointer; 
+}
+
+/* About page settings */
+
+.aboutUs {
+  display: flex;
+  align-items: right;
+  gap: 50px;
+  width: 80%;
+  color: white;
+  padding-top: 60%;
+}
+
+.aboutUs > .gil-granot-img {
+  height: 50%;
+  width: 30%;
+  margin-left: 25%;
+  mix-blend-mode: difference;
+  border-radius: 10%;
+  border-image-slice: 1;
+  mask-image: linear-gradient(to left, transparent 1%, black 20%);
+}
+
+.AboutUsParagraph {
+  text-align: right;
+}
+
+#aboutUsSectionFont {
+  font-family: "Rubik Dirt", cursive, Arial, sans-serif;
+}
+
+/* Introduction settings */
+
+.introductionSection {
+  padding-top: 20%;
+  width: 90%;
+  margin-left: 8%;
+}
+
+/* Card Carousel settings */
+
+.TrainersApp {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+}
+
+#trainerImg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.slick-slide > div {
+  margin: 0 10px;
+  padding-bottom: 30px; /* this is the padding beneath to social logos */
+}
+
+.slick-list {
+  margin: 0 -10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  background-color: black;
+  margin-top: 15%;
+}
+
+.cardTop {
+  height: 90%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/public/img/card-pattern.avif");
+  mask-image: linear-gradient(to top, transparent 1%, black 25%);
+}
+
+.cardBottom {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #060606;
+  padding: 20px;
+  gap: 30px;
+  z-index: 1;
+}
+
+.cardBottom::before {
+  /* straight line trainers card settings */
+  content: "";
+  position: absolute;
+  top: 8px; /* Adjust the positioning as needed, straight line above icon info */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 1px;
+  background-color: #fa6e07;
+
+  z-index: -1;
+}
+
+.cardBottomH2 {
+  text-align: center;
+  font-family: "Tinos", serif, Arial, sans-serif;
+  color: #f97b22;
+  background-color: #060606;
+  padding-top: 20px;
+  /* padding-bottom: 50px;  if you want to add something beneath the name of the trainer */
+  margin-bottom: 0;
+}
+
+#instagram:hover {
+  color: #cf11c9 !important;
+  transition: color 0.3s ease-in-out;
+}
+
+#facebook:hover {
+  color: #3b5998 !important;
+  transition: color 0.3s ease-in-out;
+}
+
+#aboutIcon:hover {
+  color: gray !important;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Famous Clients of gil section settings carousel */
+
+.FamousClientApp {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+}
+
+.cardFamousClient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.cardFamousClient-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardFamousClient-top > img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fa6e07;
+}
+
+/* Footer settings */
+
+.footer-row {
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-column {
+  text-align: center;
+  flex: 1;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+footer {
+  padding: 30%;
+  background-color: black;
+}
+
+h4 {
+  margin-bottom: 8px;
+}
+
+/* Form settings */
+
+#divForm {
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+  align-content: start;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: auto 2fr auto;
+}
+
+input[type="text"] {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+}
+
+input:nth-child(3) {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 2;
+}
+
+section.israelbodyForm {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(to bottom, transparent 1%, black 100%),
+    linear-gradient(to top, transparent 1%, black 100%),
+    url("/public/img/form-pattern.avif");
+  padding: 15rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Video Settings */
+
+video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+.videoText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.videoBg {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+
+.darkenVideo {
+  filter: brightness(
+    0.2
+  ); /* Adjust the value as needed (0.7 = 70% brightness) */
+  mask-image: linear-gradient(to bottom, transparent 1%, black 20%);
+}
+
+/* Introduction Settings */
+
+#introductionSectionH2 {
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* BeforeAndAfter Settings */
+
+.BeforeAndAfterSection {
+  margin-top: 20%;
+}
+
+#BeforeAndAfterSectionP {
+  font-size: 5rem;
+  text-align: center;
+  padding-bottom: 7%;
+  font-family: "Rubik Dirt", cursive, Arial, sans-serif;
+  color: #fa6e07;
+  white-space: nowrap;
+}
+
+/* TrainersRoute Settings */
+
+.trainersRouteAvatarName {
+  color: white;
+}
+
+.avatar:hover {
+  transform: scale(1.3); /* Increase the size of the avatar */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+  cursor: pointer;
+}
+
+.avatar:hover .trainersRouteAvatarName {
+  color: #0d6efd; /* Change the text color on hover */
+}
+
+.aboutTrainerPageImg {
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 1);
+  border-radius: 3%;
+  display: block;
+  margin: auto;
+}
+
+#termsIsraelBodyRouteCard {
+  margin: 6% auto;
+  width: 70%;
+}
+
+#trainerRouteForm {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* StoreRoute.js Settings */
+
+.store-button.disabled {
+  background-color: gray;
+  color: white;
+}
+
+.store-button.disabled:hover {
+  background-color: gray;
+  color: white;
+}
+
+.storeContent {
+  width: 70%;
+}
+
+/* contactus settings */
+#leaveDetailsHeadline {
+  font-size: 5rem;
+  text-align: center;
+  padding-bottom: 7%;
+  font-family: "Rubik Dirt", cursive, Arial, sans-serif;
+  color: #fa6e07;
+  white-space: nowrap;
+}
+
+/* customform settings */
+
+.text-right {
+  text-align: right;
+}
+
+/* SubmittedForm.js settings */
+
+.submittedFormContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  color: white;
+  height: 100vh;
+}
+
+div#customFormCSS {
+  background-color: rgba(83, 83, 83, 0.5);
+  margin: 0;
+  padding: 20px 40px;
+  margin: 10px 20px;
+}  
+
+
+
+/* Media query Settings */
+
+/* Mobile Devices */
+@media only screen and (max-width: 767px) {
+  #introductionSectionH2 {
+    font-size: 1.9rem;
+  }
+
+  #BeforeAndAfterSectionP {
+    font-size: 3.5rem;
+  }
+
+  .HomepageDiv {
+    padding-bottom: 29rem;
+  }
+
+  .introductionSection {
+    padding-top: 60%;
+  }
+
+  .aboutUs > .gil-granot-img {
+    display: none;
+  }
+  .aboutUs {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  #termsFooter {
+    white-space: nowrap;
+  }
+
+  .aboutUs {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Horizontally center the content */
+    color: white;
+  }
+
+  .AboutUsParagraph {
+    max-width: 97%; /* Allow the paragraph to take up the full width */
+  }
+
+  #aboutUsSectionFont {
+    padding-right: 10px;
+    font-size: 1.2rem;
+  }
+
+  #NavbarLinks {
+    padding-right: 20px;
+  }
+
+  div.nav-container#NavbarLinks {
+    margin-right: 0px;
+    margin-left: 5%;
+  }
+
+  div.nav-container {
+    margin-left: 5%;
+  }
+
+  h1.h1Homepage {
+    font-family: "Rubik Dirt", cursive, Arial, sans-serif;
+    text-align: center;
+    font-size: 4rem;
+    white-space: nowrap;
+  }
+
+  h3.h3Homepage {
+    padding-top: 1rem;
+    font-family: "Rubik Dirt", cursive, Arial, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    white-space: nowrap;
+  }
+
+  #termsIsraelBodyRouteCard {
+    margin: 6% auto;
+    width: 100%;
+  }
+
+  section.israelbodyForm {
+    padding: 60px 0 60px 0;
+  }
+
+  /* contactus settings */
+  #leaveDetailsHeadline {
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 7%;
+    font-family: "Rubik Dirt", cursive, Arial, sans-serif;
+    color: #fa6e07;
+    white-space: nowrap;
+  }
+
+  #trainerRouteForm {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .submittedFormContainer div h2 {
+    font-size: 3rem;
+  }
+
+  .submittedFormContainer div h5 {
+    font-size: large;
+    margin-right: 14px;
+    margin-top: 14px;
+    width: 94%;
+  }
+
+  div#customFormCSS {
+    background-color: rgba(83, 83, 83, 0.5);
+  } 
+
+  .CustomFormWidthOnDesktop {
+    width: 100%;
+  }
+  
+}
+
+
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  section.israelbodyForm {
+    padding: 5rem;
+  }
+
+  /* TrainersRoute.js Component */
+  #trainersRouteAvatars {
+    justify-content: center;
+  }
+
+  #noneMobileDevice {
+    display: none;
+  }
+
+  #trainersRouteParagraph {
+    width: 70%;
+  }
+
+  .CustomFormWidthOnDesktop#customFormCSS {
+    position: absolute;
+    text-align: center;
+    background-color: rgb(255, 128, 0);
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 20px 40px;
+  }
+
+  /* All the forms on mobile devices */
+  
+
+}
+
+
+
+
+
+/* Laptops */
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  section.israelbodyForm {
+    padding: 10%;
+  }
+
+  #aboutUsSectionFont {
+    font-size: 1.3rem;
+  }
+
+  #introductionSectionH2 {
+    font-size: 2.5rem;
+    margin-top: 15%;
+  }
+
+  #trainersRouteParagraph {
+    width: 70%;
+  }
+
+  /* TrainersRoute.js Component */
+  #trainersRouteAvatars {
+    justify-content: center;
+  }
+
+  #noneMobileDevice {
+    display: none;
+  }
+
+  #storesRouteStores {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+   /* BeforeAndAfter Settings */
+
+   .CustomFormWidthOnDesktop {
+    width: 60%;
+  }
+}
+
+/* Screens larger than laptops */
+@media only screen and (min-width: 1440px) {
+  #introductionSectionP {
+    font-size: 1.5rem;
+  }
+
+  #introductionSectionH2 {
+    font-size: 3.5rem;
+    margin-top: 15%;
+  }
+
+  /* Paragraph about us */
+  #AboutUsParagraph {
+    font-size: 1.3rem;
+  }
+  /* New Feature text */
+  #aboutUsSectionFont {
+    font-size: 1.5rem;
+  }
+
+  /* TrainersRoute.js Component */
+  #trainersRouteAvatars {
+    justify-content: center;
+  }
+
+  #noneMobileDevice {
+    display: none;
+  }
+
+  #trainersRouteParagraph {
+    width: 70%;
+  }
+
+  /* StoresRoute */
+  #storesRouteStores {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* BeforeAndAfter Settings */
+
+  .CustomFormWidthOnDesktop {
+    width: 60%;
+  }
+}
+
+
+
+
+
+#trainersRouteHeadline {
+  font-size: 1.5rem;
+  padding-bottom: 6px;
+}
+
+#customFormCSS {
+  position: relative;
+  text-align: center;
+  background-color: white;
+  border: 2px solid;
+  border-radius: 10px;
+  margin: 2% 20px;
+  padding: 20px 40px;
+}
+
+
+/* bootstrap */
+
+.btn-primary {
+  background-color: #fd7e14;
+  color: white;
+  border-color: #cc6000;
+  padding: 15px 60px;
+  font-size: 2rem;
+}
+
+.btn-primary:hover {
+  background-color: #b95300;
+  color: white;
+  border-color: #cc6000;
+
+}
+
+
+
+
+
+
+
+

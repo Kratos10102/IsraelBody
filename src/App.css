@@ -6,6 +6,10 @@ body {
   margin: 0 auto;
   padding: 0;
   height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 body {
@@ -128,9 +132,6 @@ h3.h3Homepage {
   font-size: 2rem;
 }
 
-
-
-
 .HomepageDiv {
   padding-bottom: 20rem;
 }
@@ -178,18 +179,17 @@ h3.h3Homepage {
 
 #whatsupIconFixed {
   position: fixed;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
   height: 40px;
   width: 40px;
   left: 3rem;
-  bottom: 10rem; 
-  transform: translateX(-50%) translateY(50%); 
+  bottom: 10rem;
+  transform: translateX(-50%) translateY(50%);
 }
-
 
 #whatsupIconFixed:hover {
   transform: translateX(-50%) translateY(50%) scale(1.3);
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 /* About page settings */
@@ -555,9 +555,7 @@ div#customFormCSS {
   margin: 0;
   padding: 20px 40px;
   margin: 10px 20px;
-}  
-
-
+}
 
 /* Media query Settings */
 
@@ -674,14 +672,12 @@ div#customFormCSS {
 
   div#customFormCSS {
     background-color: rgba(83, 83, 83, 0.5);
-  } 
+  }
 
   .CustomFormWidthOnDesktop {
     width: 100%;
   }
-  
 }
-
 
 /* Tablets */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -712,13 +708,7 @@ div#customFormCSS {
   }
 
   /* All the forms on mobile devices */
-  
-
 }
-
-
-
-
 
 /* Laptops */
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
@@ -753,9 +743,9 @@ div#customFormCSS {
     margin: 0 auto;
   }
 
-   /* BeforeAndAfter Settings */
+  /* BeforeAndAfter Settings */
 
-   .CustomFormWidthOnDesktop {
+  .CustomFormWidthOnDesktop {
     width: 60%;
   }
 }
@@ -806,10 +796,6 @@ div#customFormCSS {
   }
 }
 
-
-
-
-
 #trainersRouteHeadline {
   font-size: 1.5rem;
   padding-bottom: 6px;
@@ -825,7 +811,6 @@ div#customFormCSS {
   padding: 20px 40px;
 }
 
-
 /* bootstrap */
 
 .btn-primary {
@@ -840,13 +825,4 @@ div#customFormCSS {
   background-color: #b95300;
   color: white;
   border-color: #cc6000;
-
 }
-
-
-
-
-
-
-
-

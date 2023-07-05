@@ -2,21 +2,18 @@ html {
   height: -webkit-fill-avaliable;
 }
 body {
-  max-width: auto;
-  margin: 0 auto;
+  max-width: none; /* Removing max-width to allow content overflow */
+  margin: 0; /* Remove auto margin */
   padding: 0;
   height: 100vh;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-body {
-  overflow-x: hidden;
   background-image: url("/public/img/homepage-background-pattern.avif");
   background-repeat: repeat;
   z-index: -1;
+  overflow-x: scroll; /* Enable horizontal scrolling */
 }
 
 /* Navbar + form settings */

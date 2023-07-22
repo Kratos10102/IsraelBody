@@ -37,7 +37,10 @@
     "extends": "react-app",
     "overrides": [
       {
-        "files": ["**/*.test.js", "**/*.spec.js"],
+        "files": [
+          "**/*.test.js",
+          "**/*.spec.js"
+        ],
         "env": {
           "jest/globals": true
         }

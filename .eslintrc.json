@@ -1,0 +1,15 @@
+{
+    "plugins": ["jest"],
+    "overrides": [
+      {
+        "files": ["**/*.test.js", "**/*.spec.js"],
+        "env": {
+          "jest/globals": true
+        }
+      }
+    ],
+    "rules": {
+      // Your ESLint rules configuration (if any) goes here
+    }
+  }
+  

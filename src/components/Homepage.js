@@ -23,13 +23,6 @@ function Homepage() {
 
   return (
     <div className="HomepageDiv">
-    <a href="https://wa.me/972586929029/">
-        <img
-          src="/img/icons/whatsapp.avif"
-          alt="whats'up icon"
-          id="whatsupIconFixed"
-        />
-      </a>
       <ThemeProvider theme={theme}>
         <Grid container spacing={2}>
           <Grid item xs={12} md={8}>
@@ -53,9 +46,13 @@ function Homepage() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, transition: { delay: 1, duration: 1 } }}
               >
-                  <Typography class="h3Homepage" variant="h3" style={{ color: "#fa6e07" }}>
-                    מתחיל כאן
-                  </Typography>
+                <Typography
+                  class="h3Homepage"
+                  variant="h3"
+                  style={{ color: "#fa6e07" }}
+                >
+                  מתחיל כאן
+                </Typography>
               </motion.div>
             </div>
           </Grid>

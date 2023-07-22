@@ -7,7 +7,7 @@ import {
 } from "@mui/material";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import NewFeatureMotion from "../components/NewFeatureMotion.js"
+import NewFeatureMotion from "../components/NewFeatureMotion.js";
 
 // Typography
 let theme = createTheme();
@@ -18,13 +18,6 @@ function AboutUs() {
 
   return (
     <div className="aboutUs">
-    <a href="https://wa.me/972586929029/">
-        <img
-          src="/img/icons/whatsapp.avif"
-          alt="whats'up icon"
-          id="whatsupIconFixed"
-        />
-      </a>
       <img
         src={process.env.PUBLIC_URL + "/img/gil-granot.avif"}
         className="gil-granot-img"
@@ -39,7 +32,10 @@ function AboutUs() {
             animate={inView ? { y: 0, opacity: 1 } : {}}
             transition={{ duration: 1 }}
           >
-            <Typography variant="h2" style={{ marginBottom: "20px", textAlign: "center" }}>
+            <Typography
+              variant="h2"
+              style={{ marginBottom: "20px", textAlign: "center" }}
+            >
               <span style={{ color: "#FA6E07" }}>קצת</span> עלינו
             </Typography>
           </motion.div>
@@ -50,7 +46,11 @@ function AboutUs() {
           animate={inView ? { y: 0, opacity: 1 } : {}}
           transition={{ duration: 1, delay: 0.8 }}
         >
-          <Typography variant="body1" className="AboutUsParagraph" id="AboutUsParagraph">
+          <Typography
+            variant="body1"
+            className="AboutUsParagraph"
+            id="AboutUsParagraph"
+          >
             רשת ישראלבודי קיימת משנת 2001, הרשת עוסקת בייעוץ מקצועי לתזונה
             ואימונים. הייעוץ מותאם למגוון של אנשים, החל מאנשים המתעניינים באורח
             חיים בריא ועד לספורטאים מקצועיים. מטרתנו היא לראות את הלקוחות שלנו
@@ -59,9 +59,9 @@ function AboutUs() {
           </Typography>
         </motion.div>
         <div style={{ whiteSpace: "nowrap" }}>
-        <NewFeatureMotion />
+          <NewFeatureMotion />
         </div>
-       </div>
+      </div>
     </div>
   );
 }

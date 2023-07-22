@@ -13,12 +13,14 @@ import ContactUs from "./components/ContactUs";
 import VideoBackground from "./components/VideoBackground";
 import Introduction from "./components/Introduction";
 import BeforeAndAfter from "./components/BeforeAndAfter";
+import FixedIcons from "./components/FixedIcons";
 
 function App() {
   return (
     <div className="App">
       <VideoBackground />
       <NavigationBar />
+      <FixedIcons />
       <Homepage />
       <AboutUs />
       <Introduction />

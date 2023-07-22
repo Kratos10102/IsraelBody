@@ -26,7 +26,7 @@ export default function CustomForm() {
     } else {
       setValidated(false);
       axios
-        .post("/submit", formData) // Updated relative URL
+        .post("/submit", formData)
         .then((response) => {
           console.log(response.data);
           navigate("/submitted-form");
@@ -93,33 +93,7 @@ export default function CustomForm() {
             </FloatingLabel>
           </Form.Group>
         </Row>
-        <Row className="mb-3">
-          <Form.Group
-            as={Col}
-            md="12"
-            controlId="validationCustom03"
-            className="pb-3"
-          >
-            <FloatingLabel
-              controlId="floatingEmail"
-              label="כתובת מייל"
-              className="text-end"
-            >
-              <Form.Control
-                required
-                type="email"
-                placeholder="כתובת מייל"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-              />
-              <Form.Control.Feedback>!כתובת מייל תקינה</Form.Control.Feedback>
-              <Form.Control.Feedback type="invalid">
-                כתובת מייל לא תקינה
-              </Form.Control.Feedback>
-            </FloatingLabel>
-          </Form.Group>
-        </Row>
+
         <Row className="mb-3">
           <Form.Group
             as={Col}
@@ -143,7 +117,7 @@ export default function CustomForm() {
             </Form.Select>
           </Form.Group>
         </Row>
-        <button type="submit" class="btn btn-primary">
+        <button type="submit" className="btn btn-primary">
           שלח
         </button>
       </Form>

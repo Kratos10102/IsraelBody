@@ -41,6 +41,7 @@ function StoresRoute() {
                 <Grid
                   container
                   direction="row"
+                  justifyContent="center"
                   style={{
                     overflowX: "auto",
                     flexWrap: "nowrap",
@@ -158,7 +159,10 @@ function StoresRoute() {
             >
               ?רוצים לשמוע פרטים נוספים
             </Typography>
-            <div className="CustomFormWidthOnDesktop" style={{ margin: "0 auto"}}>
+            <div
+              className="CustomFormWidthOnDesktop"
+              style={{ margin: "0 auto" }}
+            >
               <CustomForm />
             </div>
           </Grid>

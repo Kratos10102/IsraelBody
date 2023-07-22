@@ -30,7 +30,6 @@ AnimatedTypography.defaultProps = {
   initial: { y: -20, opacity: 0 },
 };
 
-
 function TrainerCardsCarousel() {
   const [ref, inView] = useInView();
 
@@ -88,10 +87,8 @@ function TrainerCardsCarousel() {
 
   return (
     <>
-
-
- <div className="TrainersApp" style={{ color: "white"}}>
- <ThemeProvider theme={theme}>
+      <div className="TrainersApp" style={{ color: "white" }}>
+        <ThemeProvider theme={theme}>
           <motion.div
             ref={ref}
             initial={{ y: -100, opacity: 0 }} // Set the initial position and opacity
@@ -102,35 +99,38 @@ function TrainerCardsCarousel() {
               variant="h2"
               style={{ textAlign: "center", marginBottom: "20px" }}
             >
-               מי יביא אותך <span style={{color: "#FA6E07"}}>לתוצאות</span>
+              מי יביא אותך <span style={{ color: "#FA6E07" }}>לתוצאות</span>
             </Typography>
           </motion.div>
         </ThemeProvider>
 
-     <Slider {...settings}>
-       {trainersData.map((item) => (
-         <div className="card">
-           <div className="cardTop">
-             <img id="trainerImg" src={item.profileImg} alt={item.title}></img>
-           </div>
-           <h2 className="cardBottomH2">{item.name}</h2>
-           <div className="cardBottom">
-             <Link to={item.aboutPage}   onClick={scrollToTop}>
-               <InfoIcon id="aboutIcon" style={{ color: "#C0C0C0" }} />
-             </Link>
-             <Link to={item.instagramPage}>
-               <InstagramIcon id="instagram" style={{ color: "#C0C0C0" }} />
-             </Link>
-             <Link item={item.facebookPage}>
-               <FacebookIcon id="facebook" style={{ color: "#C0C0C0" }} />
-             </Link>
-           </div>
-         </div>
-       ))}
-     </Slider>
-   </div>
+        <Slider {...settings}>
+          {trainersData.map((item) => (
+            <div key={item.id} className="card">
+              <div className="cardTop">
+                <img
+                  id="trainerImg"
+                  src={item.profileImg}
+                  alt={item.title}
+                ></img>
+              </div>
+              <h2 className="cardBottomH2">{item.name}</h2>
+              <div className="cardBottom">
+                <Link to={item.aboutPage} onClick={scrollToTop}>
+                  <InfoIcon id="aboutIcon" style={{ color: "#C0C0C0" }} />
+                </Link>
+                <Link to={item.instagramPage}>
+                  <InstagramIcon id="instagram" style={{ color: "#C0C0C0" }} />
+                </Link>
+                <Link item={item.facebookPage}>
+                  <FacebookIcon id="facebook" style={{ color: "#C0C0C0" }} />
+                </Link>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
     </>
-   
   );
 }
 

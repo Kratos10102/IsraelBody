@@ -34,9 +34,14 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
+    "extends": "react-app",
+    "overrides": [
+      {
+        "files": ["**/*.test.js", "**/*.spec.js"],
+        "env": {
+          "jest/globals": true
+        }
+      }
     ]
   },
   "browserslist": {
@@ -53,7 +58,9 @@
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint-plugin-jest": "^27.2.3"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC"

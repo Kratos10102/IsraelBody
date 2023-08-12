@@ -9,7 +9,7 @@ export default function FixedIcons() {
           id="whatsupIconFixed"
         />
       </a>
-      <a href="tel:+972527409907">
+      <a href="tel:+972506929029">
         <img
           src="/img/icons/phoneIcon.avif"
           alt="phone call icon"

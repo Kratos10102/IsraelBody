@@ -26,7 +26,7 @@ export default function CustomForm() {
     } else {
       setValidated(false);
       axios
-        .post("/submit", formData)
+        .post(`${process.env.REACT_APP_SERVER_URL}/submit`, formData)
         .then((response) => {
           console.log(response.data);
           navigate("/submitted-form");

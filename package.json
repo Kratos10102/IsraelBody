@@ -38,15 +38,16 @@
     "overrides": [
       {
         "files": [
-          "**/*.test.js",
-          "**/*.spec.js"
+          "**/*.js"
         ],
         "env": {
-          "jest/globals": true
+          "browser": true,
+          "node": true
         }
       }
     ]
-  },
+  }
+  ,
   "browserslist": {
     "production": [
       ">0.2%",

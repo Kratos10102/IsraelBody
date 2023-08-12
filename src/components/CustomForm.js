@@ -26,7 +26,10 @@ export default function CustomForm() {
     } else {
       setValidated(false);
       axios
-        .post(`${process.env.REACT_APP_SERVER_URL}/submit`, formData)
+        .post(
+          "https://israelbody-app-bae05fff47b1.herokuapp.com/submit",
+          formData
+        )
         .then((response) => {
           console.log(response.data);
           navigate("/submitted-form");
